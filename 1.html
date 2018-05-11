@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>web语音播报-jq22.com</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- <textarea type="text" id="ttsText" value=""> -->
+    <textarea name="" id="ttsText" cols="30" rows="10">
+     1. 要神的应许，而不是神的允许。 民 32:1-5 流便子孙和迦得子孙的牲畜极其众多；他们看见雅谢地和基列地是可牧放牲畜之地， 就来见摩西和祭司以利亚撒，并会众的首领，说： “亚大录、底本、雅谢、宁拉、希实本、以利亚利、示班、尼波、比稳，
+    就是耶和华在以色列会众前面所攻取之地，是可牧放牲畜之地，你仆人也有牲畜”； 又说：“我们若在你眼前蒙恩，求你把这地给我们为业，不要领我们过约旦河。” 2. 不做贪心的牧者。 书 13:22 那时以色列人在所杀的人中，也用刀杀了比珥的儿子术士巴兰。
+    彼前 5:2 务要牧养在你们中间　神的群羊，按着　神旨意照管他们；不是出于勉强，乃是出于甘心；也不是因为贪财，乃是出于乐意； 要选择神做我们的产业。 书 13:14 只是利未支派，摩西（原文是他） 没有把产业分给他们。他们的产业乃是献与耶和华—以色列　神的火祭，正如耶和华所应许他们的。
+    书 13:33 只是利未支派，摩西没有把产业分给他们。耶和华—以色列的　神是他们的产业，正如耶和华所应许他们的。
+
+    </textarea>
+    <input type="button" id="tts_btn" onclick="doTTS()" value="播放">
+
+
+    <script>
+        function doTTS() {
+            var mess = document.getElementById('ttsText').value;
+            alert(mess)
+            var msg = new SpeechSynthesisUtterance(mess);
+            msg.volume = 100;
+            msg.rate = 1;
+            msg.pitch = 1.5;
+            console.log(msg);
+            window.speechSynthesis.speak(msg);
+        }
+    </script>
+
+</body>
+
+</html>
