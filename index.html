@@ -703,7 +703,8 @@
                                     </a>
                                 </div>
                                 <div class="text">
-                                    <video preload="auto" src="image/组长活动/2018-05-10/2.mp4" controls="controls" width="320" height="240"></video>
+                                    <img id="videoImg" src="image/组长活动/2018-05-10/1.jpg" />
+                                    <video preload="auto" src="image/组长活动/2018-05-10/2.mp4" controls="controls" poster="whale.png"></video>
                                 </div>
 
                             </div>
@@ -918,6 +919,13 @@
     <script src="js/bxslider.js"></script>
     <script src="js/jquery.countTo.js"></script>
     <script src="js/script.js"></script>
+    <!-- <script>
+        $(function() {
+            $("#videoImg").show(function() {
+                $("video").get(1).play();
+            })
+        })
+    </script> -->
 </body>
 
 </html>
